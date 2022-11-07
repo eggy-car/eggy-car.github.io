@@ -329,3 +329,11 @@ window.addEventListener('load', function() {
     // loadHot();
     loadAllGame();
 });
+function closestickyAds()
+{
+
+   $("#sticky-ads").css("display", "none");
+
+   stickyClosed = true;
+
+}
