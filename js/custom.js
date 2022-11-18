@@ -225,15 +225,15 @@ function loadAllGame(){
                 img = item.img;
             }
             var slug = item.slug;
-            if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
-                slug = listGame[j].slug_tmp;
+            if(slug.indexOf("fnaf2") != -1 && item.domain == 4){
+                slug = item.slug_tmp;
             } 
             const htmlItem = `
             <div
               class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 block rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg"
             >
               <figure class="relative">
-                <a title="${item.title}" href="/detail/${item.slug}.html" style="cursor:pointer">
+                <a title="${item.title}" href="/detail/${slug}.html" style="cursor:pointer">
                   <img
                     src="/images/logo/${img}.png"
                     alt="${item.title}"
@@ -266,7 +266,7 @@ function loadAllGame(){
                 
               </figure>
               <div class="mt-7 flex items-center justify-between">
-                <a title="${item.title}"  href="/detail/${item.slug}.html" style="cursor:pointer">
+                <a title="${item.title}"  href="/detail/${slug}.html" style="cursor:pointer">
                   <span class="font-display text-jacarta-700 hover:text-accent text-base dark:text-white"
                     >${item.title}</span
                   >
