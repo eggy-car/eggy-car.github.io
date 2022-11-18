@@ -270,7 +270,7 @@
     },
     {
         "slug": "jelly-truck",
-        "title": "Jelly stuck",
+        "title": "Jelly truck",
         "cat": "Car",
         "domain": 1,
         "img": "jelly-truck"
@@ -881,108 +881,32 @@
         "title": "FNAF 2",
         "cat": "Skill",
         "domain": 4,
-        "img": "Fnf"
+        "img": "Fnf",
+        "slug_tmp": "fnaf2"
     },
     {
         "slug": "fnaf2/fnaf3.html",
         "title": "FNAF 3",
         "cat": "Skill",
         "domain": 4,
-        "img": "fnaf3"
+        "img": "fnaf3",
+        "slug_tmp": "fnaf3"
     },
     {
         "slug": "fnaf2/fnaf4.html",
         "title": "FNAF 4",
         "cat": "Skill",
         "domain": 4,
-        "img": "fnaf4"
+        "img": "fnaf4",
+        "slug_tmp": "fnaf4"
     },
     {
         "slug": "fnaf2/fnafsl.html",
         "title": "FNAF Sister",
         "cat": "Skill",
         "domain": 4,
-        "img": "fnafsl"
-    },
-    {
-        "slug": "slope",
-        "title": "Slope",
-        "cat": "Skill",
-        "domain": 1,
-        "img": "slope"
-    },
-    {
-        "slug": "tunnel-rush",
-        "title": "Tunnel Rush",
-        "cat": "Skill",
-        "domain": 1,
-        "img": "tunnel-rush"
-    },
-    {
-        "slug": "iron-snout",
-        "title": "Iron Snout",
-        "cat": "Action",
-        "domain": 1,
-        "img": "iron-snout"
-    },
-    {
-        "slug": "iron-snout-2",
-        "title": "Iron Snout 2",
-        "cat": "Action",
-        "domain": 1,
-        "img": "iron-snout-2"
-    },
-    {
-        "slug": "angry-gran-run",
-        "title": "Angry gran run",
-        "cat": "Skill, Running",
-        "domain": 1,
-        "img": "angry-gran-run"
-    },
-    {
-        "slug": "2048",
-        "title": "2048",
-        "cat": "Skill",
-        "domain": 1,
-        "img": "2048"
-    },
-    {
-        "slug": "cookie-clicker",
-        "title": "Cookie Clicker",
-        "cat": "Idle",
-        "domain": 1,
-        "img": "cookie-clicker"
-    },
-    {
-        "slug": "eggy-car",
-        "title": "Eggy car",
-        "cat": "Car",
-        "domain": 1,
-        "img": "eggy-car"
-    },{
-        "slug": "endless-truck",
-        "title": "Endless truck",
-        "cat": "Car",
-        "domain": 1,
-        "img": "endless-truck"
-    },{
-        "slug": "block-the-pig",
-        "title": "Block the Pig",
-        "cat": "Skill",
-        "domain": 1,
-        "img": "block-the-pig"
-    },{
-        "slug": "among-us",
-        "title": "Among us",
-        "cat": "Action",
-        "domain": 1,
-        "img": "among-us"
-    },{
-        "slug": "fireboy-and-watergirl-1",
-        "title": "Fireboy and watergirl",
-        "cat": "Skill",
-        "domain": 1,
-        "img": "fireboy-and-watergirl-1"
+        "img": "fnafsl",
+        "slug_tmp": "fnafsl"
     },{
         "slug": "getting-over-it",
         "title": "Getting over it",

@@ -34,7 +34,12 @@ function loadGame(slug){
                         tmp_url = 'https://ubg77.github.io/fix/'+slug;
                     }
                 }
-                document.getElementById("gameframe").setAttribute("src",tmp_url);
+                if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
+                    window.location.href = 'https://eggy-car.github.io/detail/'+listGame[j].slug_tmp+'.html';
+                } else {
+                    window.location.href = 'https://eggy-car.github.io/detail/'+listGame[j].slug+'.html';
+                }
+                //document.getElementById("gameframe").setAttribute("src",tmp_url);
                 // $('#gameframe').src = tmp_url;
                 //$("html, body").animate({ scrollTop: 0 }, "slow");
                 break;

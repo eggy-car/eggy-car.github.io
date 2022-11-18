@@ -106,6 +106,10 @@ function searchGame(){
             if(item.img){
                 img = item.img;
             }
+            var slug = item.slug;
+                if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
+                   slug = listGame[j].slug_tmp;
+                } 
             const htmlItem = `<div class="g-card">
                     <div class="pic">
                     <figure class="ratio ratio-1">
@@ -181,6 +185,10 @@ function loadHot(){
             if(item.img){
                 img = item.img;
             }
+            var slug = item.slug;
+            if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
+                slug = listGame[j].slug_tmp;
+            } 
             const htmlItem = `<a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <div class="pic">
                             <figure class="ratio ratio-1 circle list-thumbnail">
@@ -216,12 +224,16 @@ function loadAllGame(){
             if(item.img){
                 img = item.img;
             }
+            var slug = item.slug;
+            if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
+                slug = listGame[j].slug_tmp;
+            } 
             const htmlItem = `
             <div
               class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 block rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg"
             >
               <figure class="relative">
-                <a title="${item.title}" href="/play.html?class=${item.slug}" style="cursor:pointer">
+                <a title="${item.title}" href="/detail/${item.slug}.html" style="cursor:pointer">
                   <img
                     src="/images/logo/${img}.png"
                     alt="${item.title}"
@@ -254,7 +266,7 @@ function loadAllGame(){
                 
               </figure>
               <div class="mt-7 flex items-center justify-between">
-                <a title="${item.title}"  href="/play.html?class=${item.slug}" style="cursor:pointer">
+                <a title="${item.title}"  href="/detail/${item.slug}.html" style="cursor:pointer">
                   <span class="font-display text-jacarta-700 hover:text-accent text-base dark:text-white"
                     >${item.title}</span
                   >
@@ -329,11 +341,3 @@ window.addEventListener('load', function() {
     // loadHot();
     loadAllGame();
 });
-function closestickyAds()
-{
-
-   $("#sticky-ads").css("display", "none");
-
-   stickyClosed = true;
-
-}
