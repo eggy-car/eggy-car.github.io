@@ -28,6 +28,13 @@
         "img": "iron-snout-2"
     },
     {
+        "slug": "vex7",
+        "title": "Vex 7",
+        "cat": "Skill, Running",
+        "domain": 1,
+        "img": "vex7"
+    },
+    {
         "slug": "angry-gran-run",
         "title": "Angry gran run",
         "cat": "Skill, Running",
@@ -225,6 +232,34 @@
         "cat": "Action, Running",
         "domain": 1,
         "img": "eagle-ride"
+    },
+    {
+        "slug": "vex6",
+        "title": "Vex 6",
+        "cat": "Skill, Running",
+        "domain": 1,
+        "img": "vex6"
+    },
+    {
+        "slug": "vex5",
+        "title": "Vex 5",
+        "cat": "Skill, Running",
+        "domain": 1,
+        "img": "vex5"
+    },
+    {
+        "slug": "vex4",
+        "title": "Vex 4",
+        "cat": "Skill, Running",
+        "domain": 1,
+        "img": "vex4"
+    },
+    {
+        "slug": "vex3",
+        "title": "Vex 3",
+        "cat": "Skill, Running",
+        "domain": 1,
+        "img": "vex3"
     },
     {
         "slug": "b-cubed",
