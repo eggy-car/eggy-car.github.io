@@ -17,7 +17,10 @@ function loadAllGame(cat){
                 var slug = item.slug;
                 if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
                    slug = listGame[j].slug_tmp;
-                } 
+                }
+                if(item.domain == 8){
+                    img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo";
+                }
                 const htmlItem = `
                 <div
                 class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 block rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg"

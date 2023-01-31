@@ -965,5 +965,71 @@
         "title": "Monster Tracks",
         "cat": "Car",
         "domain": 1
+    },
+    {
+      "slug": "elasticman",
+      "title": "Elasticman",
+      "cat": "Skill, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-singapore",
+      "title": "Subway Surfers Singapore",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-winter-holiday",
+      "title": "Subway Surfers Winter Holiday",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-havana",
+      "title": "Subway Surfers Havana",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-mumbai",
+      "title": "Subway Surfers Mumbai",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers",
+      "title": "Subway Surfers Tokyo",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-bali",
+      "title": "Subway Surfers Bali",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-new-orleans",
+      "title": "Subway Surfers New Orleans",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-hongkong",
+      "title": "Subway Surfers HongKong",
+      "cat": "Running",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-venice",
+      "title": "Subway Surfers Venice",
+      "cat": "Running, Update",
+      "domain": 8
+    },
+    {
+      "slug": "subway-surfers-nyc",
+      "title": "Subway Surfers New York City",
+      "cat": "Running, Update",
+      "domain": 8
     }
 ]
