@@ -10,9 +10,9 @@ function loadAllGame(cat){
         for (var j=0; j<listGame.length; j++) {
             if (listGame[j].cat.indexOf(tmp_cat) >= 0) {
                 var item = listGame[j];
-                var img = item.slug;
+                var img = "/images/logo/"+item.slug;
                 if(item.img){
-                    img = item.img;
+                    img = "/images/logo/"+item.img;
                 }
                 var slug = item.slug;
                 if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
@@ -28,7 +28,7 @@ function loadAllGame(cat){
                 <figure class="relative">
                     <a title="${item.title}" href="/detail/${slug}.html" style="cursor:pointer">
                     <img
-                        src="/images/logo/${img}.png"
+                        src="${img}.png"
                         alt="${item.title}"
                         class="w-full rounded-[0.625rem]"
                         loading="lazy" style="height:170px"
