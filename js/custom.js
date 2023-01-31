@@ -220,14 +220,17 @@ function loadAllGame(){
         listGame = data;
         for (var j=listGame.length-1; j>=0; j--) {
             var item = listGame[j];
-            var img = item.slug;
+            var img = "/images/logo/"+item.slug;
             if(item.img){
-                img = item.img;
+                img = "/images/logo/"+item.img;
             }
             var slug = item.slug;
-            if(slug.indexOf("fnaf2") != -1 && item.domain == 4){
-                slug = item.slug_tmp;
-            } 
+            if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
+                slug = listGame[j].slug_tmp;
+            }
+            if(item.domain == 8){
+                img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo";
+            }
             const htmlItem = `
             <div
               class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 block rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg"
@@ -235,7 +238,7 @@ function loadAllGame(){
               <figure class="relative">
                 <a title="${item.title}" href="/detail/${slug}.html" style="cursor:pointer">
                   <img
-                    src="/images/logo/${img}.png"
+                    src="${img}.png"
                     alt="${item.title}"
                     class="w-full rounded-[0.625rem]"
                     loading="lazy" style="height:230px"
