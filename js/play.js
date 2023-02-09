@@ -34,12 +34,7 @@ function loadGame(slug){
                         tmp_url = 'https://ubg77.github.io/fix/'+slug;
                     }
                 }
-                if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
-                    window.location.href = 'https://eggy-car.github.io/detail/'+listGame[j].slug_tmp+'.html';
-                } else {
-                    window.location.href = 'https://eggy-car.github.io/detail/'+listGame[j].slug+'.html';
-                }
-                //document.getElementById("gameframe").setAttribute("src",tmp_url);
+                document.getElementById("gameframe").setAttribute("src",tmp_url);
                 // $('#gameframe').src = tmp_url;
                 //$("html, body").animate({ scrollTop: 0 }, "slow");
                 break;
@@ -49,11 +44,11 @@ function loadGame(slug){
 }
 var search = window.location.search;
 if(search){
-    loadGame(search.replace('?class=',''));
+    // loadGame(search.replace('?class=',''));
     //addAdsClass();
 }
 function open_fullscreen() {
-	let game = document.getElementById("gameframe");
+	let game = document.getElementById("game-element");
 	if (game.requestFullscreen) {
 	  game.requestFullscreen();
 	} else if (game.mozRequestFullScreen) { /* Firefox */
@@ -64,7 +59,10 @@ function open_fullscreen() {
 	  game.msRequestFullscreen();
 	}
 };
-
+function playGame(){
+    var tmp = document.querySelector('#game-arena').dataset.url;
+    document.querySelector('#game-arena').innerHTML = `<iframe id="game-element" allowfullscreen="" allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write" name="gameFrame" scrolling="no" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads" src="${tmp}"></iframe>`;
+}
 var listGame;
 fetch("game/all.json",{
 headers: {
@@ -113,6 +111,21 @@ function searchGame(){
     
 }
 
-window.addEventListener('load', function() {
+function loadGA(){
+    var  r = document.createElement("script");
+	r.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-RZ2JYMQPM2"), r.setAttribute("type", "text/javascript"), r.setAttribute("crossOrigin", "anonymous"),  r.onload = function (){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-RZ2JYMQPM2');
+        var ads = document.createElement('script');
+        ads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889675448259925"), ads.setAttribute("type", "text/javascript"), ads.setAttribute("crossOrigin", "anonymous"), ads.onload = function(){
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        },document.head.appendChild(ads);
+    },document.head.appendChild(r);
+}
+window.addEventListener('load', function() {
+    loadGA();
 });
