@@ -118,7 +118,9 @@ function loadGA(){
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-RZ2JYMQPM2');
+        gtag('config', 'G-RZ2JYMQPM2', {
+            'cookie_flags': 'SameSite=None;Secure'
+          });
         var ads = document.createElement('script');
         ads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889675448259925"), ads.setAttribute("type", "text/javascript"), ads.setAttribute("crossOrigin", "anonymous"), ads.onload = function(){
             (adsbygoogle = window.adsbygoogle || []).push({});
