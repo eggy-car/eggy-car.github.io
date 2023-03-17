@@ -1031,5 +1031,11 @@
       "title": "Subway Surfers New York City",
       "cat": "Running, Update",
       "domain": 8
+    },
+    {
+      "slug": "bitlife",
+      "title": "BitLife",
+      "cat": "Running, Update",
+      "domain": 1
     }
 ]
