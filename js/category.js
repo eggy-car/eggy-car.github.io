@@ -10,16 +10,22 @@ function loadAllGame(cat){
         for (var j=0; j<listGame.length; j++) {
             if (listGame[j].cat.indexOf(tmp_cat) >= 0) {
                 var item = listGame[j];
-                var img = "/images/logo/"+item.slug;
+                var img = "/images/logo/"+item.slug+".png";
                 if(item.img){
                     img = "/images/logo/"+item.img;
+                    if(item.img.indexOf("https://") != -1){
+                    img = item.img;
+                    } else {
+                        img = `/images/logo/${item.img}.png`
+                    }
+                
                 }
                 var slug = item.slug;
                 if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
                    slug = listGame[j].slug_tmp;
                 }
                 if(item.domain == 8){
-                    img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo";
+                    img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo.png";
                 }
                 const htmlItem = `
                 <div
@@ -28,7 +34,7 @@ function loadAllGame(cat){
                 <figure class="relative">
                     <a title="${item.title}" href="/detail/${slug}.html" style="cursor:pointer">
                     <img
-                        src="${img}.png"
+                        src="${img}"
                         alt="${item.title}"
                         class="w-full rounded-[0.625rem]"
                         loading="lazy" style="height:170px"

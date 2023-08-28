@@ -220,16 +220,21 @@ function loadAllGame(){
         listGame = data;
         for (var j=listGame.length-1; j>=0; j--) {
             var item = listGame[j];
-            var img = "/images/logo/"+item.slug;
+            var img = "/images/logo/"+item.slug+".png";
             if(item.img){
                 img = "/images/logo/"+item.img;
+                if(item.img.indexOf("https://") != -1){
+                    img = item.img;
+                    } else {
+                        img = `/images/logo/${item.img}.png`
+                    }
             }
             var slug = item.slug;
             if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
                 slug = listGame[j].slug_tmp;
             }
             if(item.domain == 8){
-                img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo";
+                img = "https://ubg77.github.io/updatefaqs/"+item.slug+"/logo.png";
             }
             const htmlItem = `
             <div
@@ -238,7 +243,7 @@ function loadAllGame(){
               <figure class="relative">
                 <a title="${item.title}" href="/detail/${slug}.html" style="cursor:pointer">
                   <img
-                    src="${img}.png"
+                    src="${img}"
                     alt="${item.title}"
                     class="w-full rounded-[0.625rem]"
                     loading="lazy" style="height:230px"
@@ -304,12 +309,18 @@ function loadCategory(cat){
             var img = item.slug;
             if(item.img){
                 img = item.img;
+                if(item.img.indexOf("https://") != -1){
+                    img = item.img;
+                } else {
+                    img = `/images/logo/${item.img}.png`
+                }
+                
             }
             const htmlItem = `<div class="g-card">
                     <div class="pic">
                     <figure class="ratio ratio-1">
                         <a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
-                        <img src="/images/logo/${img}.png" class="small-thumb" alt="${item.title}">
+                        <img src="${img}" class="small-thumb" alt="${item.title}">
                         </a>
                     </figure>
                     </div>
