@@ -14,15 +14,15 @@
         "img": "tunnel-rush"
     },
     {
-        "slug": "iron-snout",
-        "title": "Iron Snout",
+        "slug": "game10",
+        "title": "Pig Super",
         "cat": "Action",
         "domain": 1,
         "img": "iron-snout"
     },
     {
-        "slug": "iron-snout-2",
-        "title": "Iron Snout 2",
+        "slug": "game11",
+        "title": "Pig Super 2",
         "cat": "Action",
         "domain": 1,
         "img": "iron-snout-2"
@@ -199,8 +199,8 @@
         "img": "burnin-rubber-5-xs"
     },
     {
-        "slug": "crossy-road",
-        "title": "Crossy Road",
+        "slug": "game7",
+        "title": "Road Run",
         "cat": "Skill",
         "domain": 1,
         "img": "crossy-road"
@@ -479,10 +479,11 @@
         "domain": 1
     },
     {
-        "slug": "retro-bowl",
-        "title": "Retro Bowl",
+        "slug": "game2",
+        "title": "Retro Game 2",
         "cat": "Sport",
-        "domain": 1
+        "domain": 1,
+        "img": "retro-bowl"
     },
     {
         "slug": "rooftop-snipers",
@@ -533,16 +534,18 @@
         "domain": 1
     },
     {
-        "slug": "stickmanhook",
-        "title": "Stickman Hook",
+        "slug": "game4",
+        "title": "Swing Hook",
         "cat": "Stickman",
-        "domain": 1
+        "domain": 1,
+        "img": "stickmanhook"
     },
     {
-        "slug": "stickmerge",
-        "title": "Stick Merge",
+        "slug": "game6",
+        "title": "Merge Man",
         "cat": "Idle, Stickman",
-        "domain": 1
+        "domain": 1,
+        "img":"stickmerge"
     },
     {
         "slug": "temple-run-2",
@@ -660,10 +663,11 @@
         "domain": 1
     },
     {
-        "slug": "blumgi-rocket",
-        "title": "Blumgi Rocket",
+        "slug": "game8",
+        "title": "Car Space Rocket",
         "cat": "Action",
-        "domain": 1
+        "domain": 1,
+        "img":"blumgi-rocket"
     },
     {
         "slug": "mad-truck-challenge-special",
@@ -756,10 +760,11 @@
         "domain": 2
     },
     {
-        "slug": "rocket-soccer-derby",
-        "title": "Rocket Soccer Derby",
+        "slug": "game13",
+        "title": "Car Rocket",
         "cat": "Car",
-        "domain": 2
+        "domain": 2,
+        "img":"rocket-soccer-derby"
     },
     {
         "slug": "stunt-car-challenge-3",
@@ -834,10 +839,11 @@
         "domain": 2
     },
     {
-        "slug": "stick-merge-halloween",
-        "title": "Stick Merge Halloween",
+        "slug": "game12",
+        "title": "Merge Iron Halloween",
         "cat": "Idle, Stickman",
-        "domain": 2
+        "domain": 2,
+        "img": "https://ubg77.github.io/edit/stick-merge-halloween/logo.png"
     },
     {
         "slug": "dunkbrush",
@@ -852,10 +858,11 @@
         "domain": 3
     },
     {
-        "slug": "drive-mad",
-        "title": "Drive Mad",
+        "slug": "game1",
+        "title": "Drive Game 1",
         "cat": "Car",
-        "domain": 3
+        "domain": 3,
+        "img": "drive-mad"
     },
     {
         "slug": "gold-digger-frvr",
@@ -961,10 +968,11 @@
         "cat": "Running",
         "domain": 4
     },{
-        "slug": "monster-tracks",
-        "title": "Monster Tracks",
+        "slug": "game3",
+        "title": "Monster Car",
         "cat": "Car",
-        "domain": 1
+        "domain": 1,
+        "img":"monster-tracks"
     },
     {
       "slug": "elasticman",
@@ -1015,10 +1023,11 @@
       "domain": 8
     },
     {
-      "slug": "subway-surfers-hongkong",
-      "title": "Subway Surfers HongKong",
+      "slug": "game9",
+      "title": "HongKong Run Man",
       "cat": "Running",
-      "domain": 8
+      "domain": 8,
+      "img":"https://ubg77.github.io/updatefaqs/subway-surfers-hongkong/logo.png"
     },
     {
       "slug": "subway-surfers-venice",
@@ -1027,10 +1036,11 @@
       "domain": 8
     },
     {
-      "slug": "subway-surfers-nyc",
-      "title": "Subway Surfers New York City",
+      "slug": "game5",
+      "title": "NYC",
       "cat": "Running, Update",
-      "domain": 8
+      "domain": 8,
+      "img":"https://ubg77.github.io/updatefaqs/subway-surfers-nyc/logo.png"
     },
     {
       "slug": "bitlife",

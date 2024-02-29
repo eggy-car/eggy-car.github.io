@@ -11,7 +11,8 @@ function loadMainGame(){
     
 }
 function loadGame(slug){
-    fetch("game/all.json",{
+    var d = Date.now();
+    fetch("game/all.json?v="+d,{
         headers: {
             'Content-Type': 'application/json',
             },
@@ -86,7 +87,8 @@ function showGame(slug){
     }
 }
 var listGame;
-fetch("game/all.json",{
+var d = Date.now();
+fetch("game/all.json?v="+d,{
 headers: {
     'Content-Type': 'application/json',
     },
